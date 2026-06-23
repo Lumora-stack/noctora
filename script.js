@@ -10,6 +10,8 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 const productCards = document.querySelectorAll('.product-card');
 const categoryElements = document.querySelectorAll('.category');
 
+const tiltCards = document.querySelectorAll('.product-card');
+
 // ========================================
 // MOBILE MENU TOGGLE
 // ========================================
@@ -41,6 +43,32 @@ navLinks.forEach(link => {
             span.style.opacity = '1';
         });
     });
+});
+
+// Product card tilt effect
+function handleCardTilt(e) {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const halfWidth = rect.width / 2;
+    const halfHeight = rect.height / 2;
+    const rotateY = ((x - halfWidth) / halfWidth) * 16;
+    const rotateX = ((halfHeight - y) / halfHeight) * 16;
+
+    card.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(1.03)`;
+    card.style.boxShadow = '0 35px 80px rgba(139, 92, 246, 0.28)';
+}
+
+function resetCardTilt(e) {
+    const card = e.currentTarget;
+    card.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
+    card.style.boxShadow = '0 18px 55px rgba(0, 0, 0, 0.35)';
+}
+
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', handleCardTilt);
+    card.addEventListener('mouseleave', resetCardTilt);
 });
 
 // ========================================
@@ -157,19 +185,15 @@ filterBtns.forEach(btn => {
 // BUY PRODUCT FUNCTIONALITY
 // ========================================
 
-function buyProduct(productName, price) {
-    // Create Gumroad link
-    const gumroadLink = `https://gumroad.com/noctara`;
+function buyProduct(productName) {
+    // Open your Gumroad dashboard link
+    const gumroadLink = 'https://gumroad.com/dashboard';
     
-    // Show notification
-    showNotification(`Redirecting to ${productName}...`);
+    showNotification(`Opening Gumroad for ${productName}...`);
     
-    // Simulate loading
     setTimeout(() => {
-        // In production, this would use actual Gumroad product links
-        // For now, redirect to main Gumroad profile
         window.open(gumroadLink, '_blank');
-    }, 500);
+    }, 450);
 }
 
 // ========================================
