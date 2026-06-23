@@ -1,0 +1,29 @@
+# Noctara - robots.txt
+# For search engine crawlers
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow bad bots
+User-agent: MJ12bot
+User-agent: SemrushBot
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://noctara.com/sitemap.xml
+Sitemap: https://noctara.com/sitemap-products.xml

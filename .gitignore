@@ -1,0 +1,60 @@
+# Node modules and package manager files
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build files
+dist/
+build/
+out/
+
+# Cache files
+.cache/
+*.cache
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pyo
+*.pyc
+
+# Temporary files
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# Log files
+logs/
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Compiled CSS/JS (if minified in a build step)
+style.min.css
+script.min.js
+
+# Sensitive data
+api-keys.js
+config.local.js

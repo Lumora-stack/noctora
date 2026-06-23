@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Noctara - Premium Digital Products & Wallpapers | Crafted with Imagination</title>
+    <meta name="description" content="Noctara offers premium wallpapers, templates, and printable resources. Elegant dark aesthetic digital products crafted with imagination. Explore exclusive collections.">
+    <meta name="keywords" content="premium wallpapers, digital templates, printable planners, aesthetic wallpapers, digital products, dark aesthetic, quote posters, Instagram templates">
+    <meta name="author" content="Noctara">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noctara.com/">
+    <meta property="og:title" content="Noctara - Premium Digital Products">
+    <meta property="og:description" content="Premium wallpapers, templates and printable resources crafted with imagination.">
+    <meta property="og:image" content="https://noctara.com/og-image.jpg">
+    <meta property="og:site_name" content="Noctara">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://noctara.com/">
+    <meta name="twitter:title" content="Noctara - Premium Digital Products">
+    <meta name="twitter:description" content="Premium wallpapers, templates and printable resources crafted with imagination.">
+    <meta name="twitter:image" content="https://noctara.com/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://noctara.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23a78bfa'>N</text></svg>">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Noctara",
+        "url": "https://noctara.com",
+        "logo": "https://noctara.com/logo.png",
+        "description": "Premium digital products marketplace featuring wallpapers, templates, and printable resources",
+        "sameAs": [
+            "https://instagram.com/noctara",
+            "https://pinterest.com/noctara"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "amazinggreenland84@gmail.com"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Noctara",
+        "image": "https://noctara.com/logo.png",
+        "description": "Premium digital products crafted with imagination",
+        "url": "https://noctara.com",
+        "telephone": "",
+        "email": "amazinggreenland84@gmail.com",
+        "priceRange": "$1-$50"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Noctara</span>
+                <span class="logo-tagline">Crafted with imagination</span>
+            </div>
+            
+            <div class="nav-search">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#freebies" class="nav-link">Freebies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Noctara</h1>
+            <p class="hero-subtitle">Premium wallpapers, templates and printable resources crafted with imagination.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                    Explore Collection
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('freebies').scrollIntoView({behavior: 'smooth'})">
+                    Free Downloads
+                </button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+            <div class="glow glow-3"></div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <h2>Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="wallpapers">Wallpapers</button>
+                <button class="filter-btn" data-filter="templates">Templates</button>
+                <button class="filter-btn" data-filter="printables">Printables</button>
+                <button class="filter-btn" data-filter="quotes">Quotes & Posters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Premium Collections</h2>
+            
+            <!-- Wallpapers -->
+            <div class="category" data-category="wallpapers">
+                <h3 class="category-title">Wallpapers</h3>
+                <div class="product-grid">
+                    <div class="product-card" data-filter="wallpapers">
+                        <div class="product-image">
+                            <img src="images/wallpapers/dark-aesthetic.jpg" alt="Dark Aesthetic Wallpapers">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Dark Aesthetic Wallpapers', 4.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Dark Aesthetic Wallpapers</h4>
+                        <p>5 premium dark aesthetic desktop wallpapers</p>
+                        <div class="product-footer">
+                            <span class="price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="wallpapers">
+                        <div class="product-image">
+                            <img src="images/wallpapers/anime.jpg" alt="Anime Wallpapers">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Anime Wallpapers Pack', 3.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Anime Wallpapers Pack</h4>
+                        <p>10 curated anime wallpapers in 4K</p>
+                        <div class="product-footer">
+                            <span class="price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="wallpapers">
+                        <div class="product-image">
+                            <img src="images/wallpapers/motivation.jpg" alt="Motivational Quote Wallpapers">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Motivational Quote Wallpapers', 2.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Motivational Quote Wallpapers</h4>
+                        <p>8 inspirational quote wallpapers</p>
+                        <div class="product-footer">
+                            <span class="price">$2.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="wallpapers">
+                        <div class="product-image">
+                            <img src="images/wallpapers/phone.jpg" alt="Minimal Phone Wallpapers">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Minimal Phone Wallpapers', 1.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Minimal Phone Wallpapers</h4>
+                        <p>12 minimal phone wallpapers (1080x1920)</p>
+                        <div class="product-footer">
+                            <span class="price">$1.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="wallpapers">
+                        <div class="product-image">
+                            <img src="images/wallpapers/desktop-pack.jpg" alt="Desktop Wallpaper Packs">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Desktop Wallpaper Packs', 7.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Desktop Wallpaper Packs</h4>
+                        <p>Complete collection - 25 wallpapers</p>
+                        <div class="product-footer">
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Templates -->
+            <div class="category" data-category="templates">
+                <h3 class="category-title">Templates</h3>
+                <div class="product-grid">
+                    <div class="product-card" data-filter="templates">
+                        <div class="product-image">
+                            <img src="images/templates/instagram-posts.jpg" alt="Instagram Post Templates">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Instagram Post Templates', 4.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Instagram Post Templates</h4>
+                        <p>15 editable Instagram post templates (Canva)</p>
+                        <div class="product-footer">
+                            <span class="price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="templates">
+                        <div class="product-image">
+                            <img src="images/templates/story-templates.jpg" alt="Story Templates">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Story Templates', 3.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Story Templates</h4>
+                        <p>20 Instagram & TikTok story templates</p>
+                        <div class="product-footer">
+                            <span class="price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="templates">
+                        <div class="product-image">
+                            <img src="images/templates/pinterest-pins.jpg" alt="Pinterest Pin Templates">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Pinterest Pin Templates', 5.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Pinterest Pin Templates</h4>
+                        <p>30 Pinterest pin templates (1000x1500px)</p>
+                        <div class="product-footer">
+                            <span class="price">$5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="templates">
+                        <div class="product-image">
+                            <img src="images/templates/quote-templates.jpg" alt="Quote Templates">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Quote Templates', 2.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Quote Templates</h4>
+                        <p>25 quote post templates with fonts</p>
+                        <div class="product-footer">
+                            <span class="price">$2.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="templates">
+                        <div class="product-image">
+                            <img src="images/templates/business-posts.jpg" alt="Business Post Templates">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Business Post Templates', 6.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Business Post Templates</h4>
+                        <p>40 professional business post templates</p>
+                        <div class="product-footer">
+                            <span class="price">$6.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Printables -->
+            <div class="category" data-category="printables">
+                <h3 class="category-title">Printable Products</h3>
+                <div class="product-grid">
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/daily-planner.jpg" alt="Daily Planner">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Daily Planner Printable', 2.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Daily Planner Printable</h4>
+                        <p>Elegant daily planner with minimal design</p>
+                        <div class="product-footer">
+                            <span class="price">$2.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/weekly-planner.jpg" alt="Weekly Planner">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Weekly Planner Printable', 3.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Weekly Planner Printable</h4>
+                        <p>Beautiful weekly planning sheets</p>
+                        <div class="product-footer">
+                            <span class="price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/habit-tracker.jpg" alt="Habit Tracker">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Habit Tracker Printable', 1.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Habit Tracker Printable</h4>
+                        <p>30-day habit tracking sheets</p>
+                        <div class="product-footer">
+                            <span class="price">$1.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/savings-tracker.jpg" alt="Savings Tracker">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Savings Tracker Printable', 2.49)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Savings Tracker Printable</h4>
+                        <p>Financial savings tracking sheets</p>
+                        <div class="product-footer">
+                            <span class="price">$2.49</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/budget-planner.jpg" alt="Budget Planner">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Budget Planner Printable', 3.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Budget Planner Printable</h4>
+                        <p>Complete monthly budget planning kit</p>
+                        <div class="product-footer">
+                            <span class="price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="printables">
+                        <div class="product-image">
+                            <img src="images/printables/todo-lists.jpg" alt="To-Do Lists">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('To-Do Lists Printable', 1.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>To-Do Lists Printable</h4>
+                        <p>Minimal daily to-do list templates</p>
+                        <div class="product-footer">
+                            <span class="price">$1.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quotes & Posters -->
+            <div class="category" data-category="quotes">
+                <h3 class="category-title">Quotes & Posters</h3>
+                <div class="product-grid">
+                    <div class="product-card" data-filter="quotes">
+                        <div class="product-image">
+                            <img src="images/quotes/motivational-posters.jpg" alt="Motivational Posters">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Motivational Posters Pack', 4.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Motivational Posters Pack</h4>
+                        <p>10 high-quality motivational posters</p>
+                        <div class="product-footer">
+                            <span class="price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="quotes">
+                        <div class="product-image">
+                            <img src="images/quotes/dark-aesthetic-quotes.jpg" alt="Dark Aesthetic Quote Cards">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Dark Aesthetic Quote Cards', 3.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Dark Aesthetic Quote Cards</h4>
+                        <p>15 dark aesthetic quote cards</p>
+                        <div class="product-footer">
+                            <span class="price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="quotes">
+                        <div class="product-image">
+                            <img src="images/quotes/stoic-quotes.jpg" alt="Stoic Quote Packs">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Stoic Quote Packs', 2.99)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Stoic Quote Packs</h4>
+                        <p>20 stoic philosophy quote posters</p>
+                        <div class="product-footer">
+                            <span class="price">$2.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-filter="quotes">
+                        <div class="product-image">
+                            <img src="images/quotes/study-motivation.jpg" alt="Study Motivation Posters">
+                            <div class="product-overlay">
+                                <button class="buy-btn" onclick="buyProduct('Study Motivation Posters', 3.49)">Buy Now</button>
+                            </div>
+                        </div>
+                        <h4>Study Motivation Posters</h4>
+                        <p>12 study motivation poster designs</p>
+                        <div class="product-footer">
+                            <span class="price">$3.49</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freebies Section -->
+    <section id="freebies" class="freebies">
+        <div class="container">
+            <h2 class="section-title">Free Downloads</h2>
+            <p class="section-subtitle">Get exclusive free wallpapers and printables. No email required!</p>
+            
+            <div class="product-grid">
+                <div class="product-card freebie">
+                    <div class="product-image">
+                        <img src="images/wallpapers/free-aesthetic.jpg" alt="Free Dark Aesthetic Wallpaper">
+                        <span class="free-badge">FREE</span>
+                        <div class="product-overlay">
+                            <button class="buy-btn" onclick="downloadFree('Dark Aesthetic Wallpaper')">Download</button>
+                        </div>
+                    </div>
+                    <h4>Dark Aesthetic Wallpaper</h4>
+                    <p>4K dark aesthetic wallpaper</p>
+                </div>
+
+                <div class="product-card freebie">
+                    <div class="product-image">
+                        <img src="images/printables/free-todo.jpg" alt="Free To-Do List">
+                        <span class="free-badge">FREE</span>
+                        <div class="product-overlay">
+                            <button class="buy-btn" onclick="downloadFree('Simple To-Do List')">Download</button>
+                        </div>
+                    </div>
+                    <h4>Simple To-Do List</h4>
+                    <p>Minimal to-do list printable</p>
+                </div>
+
+                <div class="product-card freebie">
+                    <div class="product-image">
+                        <img src="images/quotes/free-quote.jpg" alt="Free Motivational Quote">
+                        <span class="free-badge">FREE</span>
+                        <div class="product-overlay">
+                            <button class="buy-btn" onclick="downloadFree('Motivational Quote Poster')">Download</button>
+                        </div>
+                    </div>
+                    <h4>Motivational Quote Poster</h4>
+                    <p>Inspiring quote poster design</p>
+                </div>
+
+                <div class="product-card freebie">
+                    <div class="product-image">
+                        <img src="images/templates/free-template.jpg" alt="Free Social Media Template">
+                        <span class="free-badge">FREE</span>
+                        <div class="product-overlay">
+                            <button class="buy-btn" onclick="downloadFree('Social Media Template')">Download</button>
+                        </div>
+                    </div>
+                    <h4>Social Media Template</h4>
+                    <p>Instagram post template (Canva)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Noctara</h3>
+                    <p>Have questions? Reach out to us directly.</p>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:amazinggreenland84@gmail.com">amazinggreenland84@gmail.com</a>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://instagram.com" class="social-link" title="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.015-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com" class="social-link" title="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.694 1.58-6.694s-.4-.8-.4-1.983c0-1.857 1.077-3.246 2.416-3.246 1.14 0 1.69.856 1.69 1.882 0 1.145-.728 2.856-1.1 4.435-.313 1.324.627 2.405 1.859 2.405 2.231 0 3.946-2.352 3.946-5.748 0-3.01-2.163-5.115-5.248-5.115-3.595 0-5.722 2.704-5.722 5.493 0 1.089.408 2.251.92 2.884.101.127.116.243.087.371l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.134-2.607 7.462-6.233 7.462-1.214 0-2.356-.631-2.748-1.375l-.749 2.85c-.271 1.039-1.002 2.34-1.495 3.13 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Noctara</h4>
+                    <p>Premium digital products crafted with imagination. Explore our collection of wallpapers, templates, and printable resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#freebies">Freebies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:amazinggreenland84@gmail.com">amazinggreenland84@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Noctara — Crafted with imagination.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

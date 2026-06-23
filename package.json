@@ -1,0 +1,77 @@
+{
+  "name": "noctara",
+  "version": "1.0.0",
+  "description": "Premium digital products marketplace - Wallpapers, Templates, and Printables",
+  "title": "Noctara - Crafted with imagination",
+  "tagline": "Premium digital products marketplace",
+  "type": "website",
+  "author": "Noctara",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/noctara.git"
+  },
+  "homepage": "https://noctara.com",
+  "keywords": [
+    "premium wallpapers",
+    "digital templates",
+    "printable resources",
+    "dark aesthetic",
+    "digital products",
+    "marketplace",
+    "Gumroad"
+  ],
+  "contact": {
+    "email": "amazinggreenland84@gmail.com",
+    "social": {
+      "instagram": "https://instagram.com/noctara",
+      "pinterest": "https://pinterest.com/noctara"
+    }
+  },
+  "scripts": {
+    "serve": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "colors": {
+    "primary": "#a78bfa",
+    "primaryLight": "#c4b5fd",
+    "background": "#0a0e27",
+    "backgroundSecondary": "#111633",
+    "text": "#ffffff",
+    "textSecondary": "#b0b4c0"
+  },
+  "categories": [
+    "wallpapers",
+    "templates",
+    "printables",
+    "quotes",
+    "freebies"
+  ],
+  "features": [
+    "Dark minimal theme",
+    "Modern glassmorphism",
+    "Responsive design",
+    "SEO optimized",
+    "Product search",
+    "Category filters",
+    "Smooth animations",
+    "Mobile friendly"
+  ],
+  "seo": {
+    "title": "Noctara - Premium Digital Products",
+    "description": "Premium wallpapers, templates and printable resources crafted with imagination.",
+    "keywords": "premium wallpapers, digital templates, printable planners, aesthetic wallpapers, digital products",
+    "lang": "en",
+    "robots": "index, follow"
+  },
+  "deployment": {
+    "hosting": [
+      "GitHub Pages",
+      "Vercel",
+      "Netlify",
+      "Traditional FTP"
+    ],
+    "domain": "https://noctara.com",
+    "ssl": "recommended"
+  }
+}
