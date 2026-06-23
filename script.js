@@ -9,8 +9,55 @@ const searchInput = document.getElementById('searchInput');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const productCards = document.querySelectorAll('.product-card');
 const categoryElements = document.querySelectorAll('.category');
+const showMoreSections = document.querySelectorAll('.show-more-section');
 
 const tiltCards = document.querySelectorAll('.product-card');
+
+// ========================================
+// SHOW MORE / SHOW LESS SECTIONS
+// ========================================
+
+function updateShowMoreSection(section, showAll) {
+    const cards = Array.from(section.querySelectorAll('.product-card'));
+    const limit = Number(section.dataset.showLimit) || cards.length;
+    const button = section.querySelector('.show-more-btn');
+
+    cards.forEach((card, index) => {
+        if (index < limit) {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = showAll ? 'flex' : 'none';
+            card.style.opacity = showAll ? '1' : '0';
+        }
+    });
+
+    if (button) {
+        button.textContent = showAll ? 'Show Less' : 'Show More';
+        section.dataset.expanded = showAll ? 'true' : 'false';
+    }
+}
+
+function initializeShowMoreSections() {
+    showMoreSections.forEach(section => {
+        const button = section.querySelector('.show-more-btn');
+        if (button) {
+            button.addEventListener('click', () => {
+                const expanded = section.dataset.expanded === 'true';
+                updateShowMoreSection(section, !expanded);
+            });
+        }
+        updateShowMoreSection(section, false);
+    });
+}
+
+function resetShowMoreSection(section) {
+    if (section.classList.contains('show-more-section')) {
+        updateShowMoreSection(section, false);
+    }
+}
+
+initializeShowMoreSections();
 
 // ========================================
 // MOBILE MENU TOGGLE
@@ -113,6 +160,10 @@ searchInput.addEventListener('input', (e) => {
             }, 300);
         }
     });
+
+    if (!searchTerm) {
+        initializeShowMoreSections();
+    }
 });
 
 // ========================================
@@ -130,51 +181,21 @@ filterBtns.forEach(btn => {
         const filterValue = btn.getAttribute('data-filter');
         
         if (filterValue === 'all') {
-            // Show all categories
             categoryElements.forEach(category => {
                 category.style.display = 'block';
-                setTimeout(() => {
-                    category.style.opacity = '1';
-                }, 10);
+                category.style.opacity = '1';
+                resetShowMoreSection(category);
             });
-            
-            productCards.forEach(card => {
-                card.style.display = 'flex';
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                }, 10);
-            });
+            initializeShowMoreSections();
         } else {
-            // Hide all categories
-            categoryElements.forEach(category => {
-                category.style.opacity = '0';
-                setTimeout(() => {
-                    category.style.display = 'none';
-                }, 300);
-            });
-            
-            // Show filtered cards
-            productCards.forEach(card => {
-                if (card.getAttribute('data-filter') === filterValue) {
-                    card.style.display = 'flex';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                    }, 10);
-                } else {
-                    card.style.opacity = '0';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300);
-                }
-            });
-            
-            // Show the relevant category title
             categoryElements.forEach(category => {
                 if (category.getAttribute('data-category') === filterValue) {
                     category.style.display = 'block';
-                    setTimeout(() => {
-                        category.style.opacity = '1';
-                    }, 10);
+                    category.style.opacity = '1';
+                    resetShowMoreSection(category);
+                } else {
+                    category.style.display = 'none';
+                    category.style.opacity = '0';
                 }
             });
         }
@@ -186,11 +207,8 @@ filterBtns.forEach(btn => {
 // ========================================
 
 function buyProduct(productName) {
-    // Open your Gumroad dashboard link
     const gumroadLink = 'https://gumroad.com/dashboard';
-    
     showNotification(`Opening Gumroad for ${productName}...`);
-    
     setTimeout(() => {
         window.open(gumroadLink, '_blank');
     }, 450);

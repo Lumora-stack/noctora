@@ -652,6 +652,27 @@ body {
     color: var(--color-accent);
 }
 
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 0;
+    padding: 12px 28px;
+    background: rgba(139, 92, 246, 0.14);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 999px;
+    color: var(--color-accent-light);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.show-more-btn:hover {
+    background: rgba(139, 92, 246, 0.22);
+    transform: translateY(-2px);
+}
+
 /* ===========================
    FREEBIES SECTION
    =========================== */
@@ -872,10 +893,14 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .nav-search {
-        display: none;
+        display: flex;
+        width: 100%;
+        max-width: none;
     }
 
     .nav-menu {
@@ -898,8 +923,14 @@ body {
         display: flex;
     }
 
+    .hero {
+        min-height: auto;
+        padding: 60px 0 40px;
+    }
+
     .hero-buttons {
         flex-direction: column;
+        gap: 14px;
     }
 
     .btn {
@@ -908,8 +939,8 @@ body {
     }
 
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 18px;
     }
 
     .product-card h4 {
@@ -960,7 +991,8 @@ body {
 
     .hero {
         margin-top: 70px;
-        min-height: calc(100vh - 70px);
+        min-height: auto;
+        padding: 40px 0 40px;
     }
 
     .hero-title {
@@ -997,6 +1029,10 @@ body {
 
     .contact-info {
         padding: 25px;
+    }
+
+    .footer {
+        padding: 40px 20px 30px;
     }
 
     .filter-buttons {
